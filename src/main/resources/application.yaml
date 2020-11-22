@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: la-active-businesses
+
+graphql:
+  tools:
+    schema-location-pattern: "graphql/*.graphqls"
+  servlet:
+    mapping: /graphql
+    websocket:
+      enabled: false
+    enabled: true
+    # if you want to @ExceptionHandler annotation for custom GraphQLErrors
+    exception-handlers-enabled: true
+    contextSetting: PER_REQUEST_WITH_INSTRUMENTATION
+
+server:
+  port: 8080
+
+third-party:
+  active-businesses: https://data.lacity.org/resource/6rrh-rzua.json
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+graphql:
+  servlet:
+    corsEnabled: false
+
+graphiql:
+  mapping: /graphiql
+  endpoint:
+    graphql: /graphql
+    subscriptions: /subscriptions
+  subscriptions:
+    timeout: 30
+    reconnect: false
+  static:
+    basePath: /
+  enabled: true
+  pageTitle: GraphiQL
+  props:
+    variables:
+      editorTheme: "solarized light"

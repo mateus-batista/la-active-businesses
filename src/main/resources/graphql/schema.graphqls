@@ -1,0 +1,23 @@
+scalar Date
+
+type Location {
+    latitude: Float!
+    longitude: Float!
+}
+
+type Business {
+    name: String!
+    address: String!
+    city: String!
+    zipCode: String!
+    location: Location!
+    startDate: Date
+    endDate: Date
+}
+
+type Query {
+    #Returns a list containing all the Business entities for the business with most locations
+    businessWithMostLocations: [Business]!
+    #Returns the Business entity for the oldest business
+    oldestBusiness: Business!
+}
