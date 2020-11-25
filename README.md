@@ -56,5 +56,8 @@ and then execute it with:
 docker run -p 8080:8080 --name=la-active-businesses la-active-businesses
 ```
 
+### Extra
 
-
+You can check the app running at :
+ 
+ https://la-active-businesses.herokuapp.com/
