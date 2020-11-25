@@ -1,9 +1,9 @@
 import { render } from "@testing-library/react";
 import React from "react";
-import App from "./App";
+import { Title } from "../Title";
 
-describe("App test", () => {
+describe("Title test", () => {
   test("should render correctly", () => {
-    expect(render(<App />)).toMatchSnapshot();
+    expect(render(<Title />)).toMatchSnapshot();
   });
 });

@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header test should render correctly with navigation 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": .emotion-0 {
+  grid-area: header;
+  background-color: #0f2940;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.emotion-1 {
+  color: white;
+  margin: 0 0.25rem;
+  font-size: 0.75rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2 {
+  font-size: 0.75rem;
+  color: white;
+}
+
+<body>
+    <div>
+      <div
+        class="emotion-0"
+      >
+        <div>
+          <a
+            class="emotion-1"
+            href="/"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-home fa-w-18 fa-lg Home"
+              data-icon="home"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="emotion-2"
+        >
+          Wed Nov 25 2020
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": .emotion-0 {
+  grid-area: header;
+  background-color: #0f2940;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.emotion-1 {
+  color: white;
+  margin: 0 0.25rem;
+  font-size: 0.75rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2 {
+  font-size: 0.75rem;
+  color: white;
+}
+
+<div>
+    <div
+      class="emotion-0"
+    >
+      <div>
+        <a
+          class="emotion-1"
+          href="/"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-home fa-w-18 fa-lg Home"
+            data-icon="home"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 576 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+              fill="currentColor"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        class="emotion-2"
+      >
+        Wed Nov 25 2020
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
