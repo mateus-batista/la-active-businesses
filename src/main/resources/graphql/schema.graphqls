@@ -17,7 +17,7 @@ type Business {
 
 type Query {
     #Returns a list containing all the Business entities for the business with most locations
-    businessWithMostLocations: [Business]!
+    businessWithMostLocations: Business!
     #Returns the Business entity for the oldest business
     oldestBusiness: Business!
 }

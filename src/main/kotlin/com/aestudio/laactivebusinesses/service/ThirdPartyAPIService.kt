@@ -18,7 +18,7 @@ class ThirdPartyAPIService(
         kotlin.runCatching {
             return this.restTemplate.getForEntity(thirdPartyProperties.activeBusinesses, Array<Business>::class.java).body
         }.onFailure {
-            logger.error("Fail to reach API server ${thirdPartyProperties.activeBusinesses}", it)
+            logger.error("Fail to reach API server ${thirdPartyProperties.activeBusinesses}")
         }
 
         return null

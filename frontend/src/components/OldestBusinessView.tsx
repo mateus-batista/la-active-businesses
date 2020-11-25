@@ -4,11 +4,15 @@ import { OldestBusinessResult } from "../model/OldestBusinessResult";
 import { BusinessContent } from "./BusinessContent";
 import { LoadingIndicator } from "./loading/LoadingIndicator";
 import { PageContent } from "./layout/PageContent";
+import { LoadingError } from "./loading/LoadingError";
 
 export function OldestBusinessView() {
-  const { data } = useQuery<OldestBusinessResult>(OLDEST_BUSINESS_QUERY, {
-    fetchPolicy: "cache-first",
-  });
+  const { data, loading, error } = useQuery<OldestBusinessResult>(
+    OLDEST_BUSINESS_QUERY,
+    {
+      fetchPolicy: "cache-first",
+    }
+  );
 
   if (data?.oldestBusiness) {
     return (
@@ -16,8 +20,10 @@ export function OldestBusinessView() {
         <BusinessContent business={data.oldestBusiness} />
       </PageContent>
     );
-  } else {
+  } else if (loading) {
     return <LoadingIndicator />;
+  } else {
+    return <LoadingError error={error} />;
   }
 }
 

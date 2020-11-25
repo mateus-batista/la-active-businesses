@@ -21,7 +21,7 @@ internal class BusinessQueryResolverTest {
 
         val businessWithMostLocations = businessQueryResolver.businessWithMostLocations()
 
-        assert(businessWithMostLocations?.size == 2)
+        assert(businessWithMostLocations != null && businessWithMostLocations.name == "TEST 1")
     }
 
     @Test

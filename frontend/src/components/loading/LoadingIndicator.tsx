@@ -1,7 +1,7 @@
-/** @jsx jsx */
-import { css, jsx } from "@emotion/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Title } from "../layout/Title";
 
 export function LoadingIndicator() {

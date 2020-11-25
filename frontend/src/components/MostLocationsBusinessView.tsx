@@ -3,10 +3,11 @@ import React from "react";
 import { BusinessWithMostLocationsResult } from "../model/MostLocationsBusinessResult";
 import { BusinessContent } from "./BusinessContent";
 import { PageContent } from "./layout/PageContent";
+import { LoadingError } from "./loading/LoadingError";
 import { LoadingIndicator } from "./loading/LoadingIndicator";
 
 export function MostLocationBusinessView() {
-  const { data } = useQuery<BusinessWithMostLocationsResult>(
+  const { data, loading, error } = useQuery<BusinessWithMostLocationsResult>(
     MOST_LOCATION_BUSINESS_QUERY,
     {
       fetchPolicy: "cache-first",
@@ -16,11 +17,13 @@ export function MostLocationBusinessView() {
   if (data?.businessWithMostLocations) {
     return (
       <PageContent title="Business with most locations">
-        <BusinessContent business={data.businessWithMostLocations[0]} />
+        <BusinessContent business={data.businessWithMostLocations} />
       </PageContent>
     );
-  } else {
+  } else if (loading) {
     return <LoadingIndicator />;
+  } else {
+    return <LoadingError error={error} />;
   }
 }
 

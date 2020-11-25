@@ -1,6 +1,5 @@
-/** @jsx jsx */
+import React from "react";
 import { ApolloProvider } from "@apollo/client";
-import { jsx } from "@emotion/react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Container } from "./components/layout/Container";
 import { Footer } from "./components/layout/Footer";

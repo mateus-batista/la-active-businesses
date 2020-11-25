@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component
 @Component
 class BusinessQueryResolver(val thirdPartyAPIService: ThirdPartyAPIService) : GraphQLQueryResolver {
 
-    fun businessWithMostLocations(): List<Business>? {
+    fun businessWithMostLocations(): Business? {
         return this.thirdPartyAPIService.getActiveBusinesses().getOrThrowGraphQLError { list ->
             list
                 .groupBy { it.name }
                 .maxByOrNull { it.value.size }
-                ?.value
+                ?.value?.first()
         }
     }
 
